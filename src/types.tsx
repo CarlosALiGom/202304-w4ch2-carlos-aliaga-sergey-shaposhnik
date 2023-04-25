@@ -4,5 +4,5 @@ export interface CharacterStructure {
   height: number;
   mass: number;
   picture: string;
-  birthyear: number;
+  birthyear: string;
 }

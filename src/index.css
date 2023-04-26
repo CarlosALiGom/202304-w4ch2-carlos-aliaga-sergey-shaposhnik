@@ -1,9 +1,46 @@
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-family: "Bruno Ace", cursive;
 }
 
-html {
-  font-family: sans-serif;
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+.container {
+  padding: 40px;
 }

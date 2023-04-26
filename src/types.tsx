@@ -1,8 +1,8 @@
 export interface CharacterStructure {
   id: number;
   name: string;
-  height: number;
-  mass: number;
+  height: string;
+  mass: string;
   picture: string;
   birthyear: string;
 }

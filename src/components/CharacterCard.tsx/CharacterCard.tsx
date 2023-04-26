@@ -17,7 +17,9 @@ const Character = ({
             alt={name}
           />
           <div className="character__info">
-            <h2 className="character__name">{name}</h2>
+            <h2 role="contentinfo" className="character__name">
+              {name}
+            </h2>
             <ul className="character__data-list">
               <li className="character__data">Birthyear: {birthyear}</li>
               <li className="character__data">Height: {height}</li>

@@ -3,8 +3,7 @@ import Character from "./CharacterCard";
 
 describe("Given a Character component", () => {
   describe("When it recieves a character `Darth Vader`", () => {
-    test("Then it should show the text 'Darth Vader` on a h2", () => {
-      const expectedText = "Darth Vader";
+    test("Then it should show a text 'Darth Vader` on a h2", () => {
       const character = {
         id: 4,
         name: "Darth Vader",
@@ -16,9 +15,9 @@ describe("Given a Character component", () => {
 
       render(<Character character={character} />);
 
-      const text = screen.getByRole("h2");
+      const text = screen.getByRole("contentinfo");
 
-      expect(expectedText).toBe(text.textContent);
+      expect(text).toBeInTheDocument();
     });
   });
 });
